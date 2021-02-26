@@ -236,7 +236,7 @@ function App() {
   return (
     <div id="main">
       States:
-      <select value={key} id="#city" onChange={handleStateChange}>
+      <select value={key} id="#state" onChange={handleStateChange}>
         {states.map((item, key) => (
           <option value={key} key={key}>
             {item.name}
