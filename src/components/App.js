@@ -236,39 +236,39 @@ function App() {
   return (
     <div id="main">
       States:
-      <select value={key} id="#state" onChange={handleStateChange}>
+      <select value={key} id="state" onChange={handleStateChange}>
         {states.map((item, key) => (
           <option value={key} key={key}>
             {item.name}
           </option>
         ))}
       </select>
-      <div id="#state-title">{states[key].name}</div>
-      <div id="#state-description">{states[key].description}</div>
+      <div id="state-title">{states[key].name}</div>
+      <div id="state-description">{states[key].description}</div>
       {/* <h1>{keycity}</h1> */}
       Cities:
-      <select id="#city" value={keycity} onChange={handleCityChange}>
+      <select id="city" value={keycity} onChange={handleCityChange}>
         {states[key].city.map((item, key) => (
           <option value={key} key={key}>
             {item.name}
           </option>
         ))}
       </select>
-      <div id="#city-title">{states[key].city[keycity].name}</div>
-      <div id="#city-description">{states[key].city[keycity].description}</div>
+      <div id="city-title">{states[key].city[keycity].name}</div>
+      <div id="city-description">{states[key].city[keycity].description}</div>
       {/* <h1>{keytown}</h1> */}
       Towns:
-      <select value={keytown} id="#landmark" onChange={handleTownChange}>
+      <select value={keytown} id="landmark" onChange={handleTownChange}>
         {states[key].city[keycity].landmarks.map((item, key) => (
           <option value={key} key={key}>
             {item.name}
           </option>
         ))}
       </select>
-      <div id="#landmark-title">
+      <div id="landmark-title">
         {states[key].city[keycity].landmarks[keytown].name}
       </div>
-      <div id="#landmark-description">
+      <div id="landmark-description">
         {states[key].city[keycity].landmarks[keytown].description}
       </div>
     </div>
